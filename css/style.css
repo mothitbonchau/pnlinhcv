@@ -1,0 +1,137 @@
+.toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
+    color: white; }
+
+body{background-color: white;}
+
+#logo {font-family:MyriadProBold; font-size: 25px; float: left }
+#logo2 {font-family:MyriadProBold; font-size: 25px; float: left; color: #0277bd; background-color: white;margin-left: 3px; padding: 0px 3px;border-radius: 2px;height: 35px;}
+
+.main-nav {
+    height: 56px;
+    min-height: 56px;
+    padding: 0 16px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);
+}
+.l-layer-5 {
+    z-index: 5;
+}
+.l-pinned-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
+.main-nav h1 {
+    margin: 0 50px 0 0;
+    padding: 0;
+    height: 28px;
+    width: 136px;
+    float: left;
+}
+
+.main-nav h1 a {
+    background: url("../imgs/logo.png") 0 14px no-repeat;
+    display: block;
+    height: 56px;
+    width: 120px;
+    overflow: hidden;
+    text-indent: -3000px;
+    margin: 0;
+    padding: 0;
+}
+
+.l-left {
+    float: left;
+}
+.main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.main-nav .main-nav-button {
+    line-height: 56px;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 16px;
+    text-transform: capitalize;
+    font-family: "Roboto","Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    background: none;
+    border-radius: 0;
+    position: relative;
+    letter-spacing: 0.16px;
+    margin: 0;
+    min-width: auto;
+}
+.l-right {
+    float: right;
+}
+.nav-icon {
+    margin-top: 8px;
+}
+
+.visible{
+        display: block!important;
+}
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 800px){
+    .main-nav ul {
+        box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        float: none;
+        position: absolute;
+        top: 56px;
+        right: 0;
+        left: 0;
+        z-index: 6;
+        background: #0143A3;
+       display: none;
+    }
+}
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 800px)
+{
+    .main-nav ul li {
+        display: block;
+        float: none;
+    }
+}
+
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 800px)
+{
+    .main-nav ul .main-nav-button {
+        display: block;
+        float: none;
+        line-height: 48px;
+        text-align: left;
+        font-size: 14px;
+        padding: 0 40px;
+    }
+}
+
+.main-nav .main-nav-mobile-trigger {
+    display: none;
+    padding: 0 15px 0 15px;
+    font-size: 14px;
+}
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 800px){
+    .main-nav .main-nav-mobile-trigger {
+        display: inline-block;
+    }
+}
+
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('fonts/myriad-pro-bold.eot'); /* IE9 Compat Modes */
+    src: url('myriad-pro-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('fonts/myriad-pro-bold.otf') format('opentype'),
+        url('fonts/myriad-pro-bold.ttf')  format('truetype'),
+        url('fonts/myriad-pro-bold.woff') format('woff');
+    font-weight: bold;
+}
