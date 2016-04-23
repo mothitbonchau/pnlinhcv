@@ -2,6 +2,8 @@
 <html >
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
         <title>Basic Usage</title>
         <!--        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">-->
         <link rel='stylesheet prefetch' href='css/angular-material.css'>
@@ -16,22 +18,22 @@
 
     <body>
 
-        <div ng-controller="AppCtrl" ng-cloak="" class="toolbardemoBasicUsage" ng-app="MyApp">
+        <div ng-controller="AppCtrl"  class="toolbardemoBasicUsage" ng-app="MyApp">
 
             <md-toolbar  class="md-hue-2  main-nav l-pinned-top l-layer-5">
                 <nav>
                     <h1>
                         <a class="md-button md-ink-ripple" ng-transclude="" href="#" md-button>
                             <div class="md-ripple-container"></div></a>
-                            
+
                     </h1>
-                    
+
                     <button class="main-nav-button main-nav-mobile-trigger l-right md-button md-ink-ripple" type="button" ng-transclude="" aria-label="View Menu" ng-click="showDocsNav = !showDocsNav" md-button="md-button">
                         <span class="ng-scope">Menu </span>
                     </button>
-                    
-                    
-                    <ul ng-class="showDocsNav ?'visible':''">
+
+
+                    <ul ng-class="showDocsNav ? 'visible' : ''">
                         <li class="l-left">
                             <a class="main-nav-button md-button md-ink-ripple" ng-transclude="" href="#" md-button="">
                                 <span class="ng-scope">Features</span>
@@ -56,12 +58,12 @@
                                 <div class="md-ripple-container"></div>
                             </a>
                         </li>
-<!--                        <li class="l-left">
-                            <a class="main-nav-button md-button md-ink-ripple" ng-transclude="" href="#" md-button="">
-                                <span class="ng-scope">Business Service</span>
-                                <div class="md-ripple-container"></div>
-                            </a>
-                        </li>-->
+                        <!--                        <li class="l-left">
+                                                    <a class="main-nav-button md-button md-ink-ripple" ng-transclude="" href="#" md-button="">
+                                                        <span class="ng-scope">Business Service</span>
+                                                        <div class="md-ripple-container"></div>
+                                                    </a>
+                                                </li>-->
                         <li class="l-right nav-icon">
                         <md-button class="md-icon-button" aria-label="More">
                             <img src="imgs/more_vert.svg"/>
@@ -82,45 +84,133 @@
                             <img src="imgs/search.svg"/>
                         </md-button>
                         </li>
-                    </ul>
-
-
-
-
-
-
-
-
-
-                    <!--                    <md-button class="md-icon-button" aria-label="Settings" >
-                                            <img src="imgs/reorder.svg"/>
-                                        </md-button>
-                    
-                    
-                                        <div id="logo">Linked</div>
-                                        <div id="logo2" ><span>in</span></div>
-                    
-                    
-                    
-                    
-                                        
-                                        <span flex=""></span>
-                    
-                                        <md-button class="md-icon-button" aria-label="Favorite">
-                                            <img src="imgs/message.svg"/>
-                                        </md-button>
-                                        <md-button class="md-icon-button " aria-label="Favorite">
-                                            <img src="imgs/person.svg"/>
-                                        </md-button>
-                                        <md-button class="md-icon-button" aria-label="More">
-                                            <img src="imgs/more_vert.svg"/>
-                                        </md-button>-->
-                </nav>
+                    </ul> </nav>
 
             </md-toolbar>
 
 
 
+            <div class="is-centered"  >
+                <div class="l-left">
+
+                    <md-card>
+                        <div class="main-inf-container">
+                            <div class="main-info-UR" >
+                                <md-button class="md-icon-button" aria-label="More">
+                                    <img src="imgs/inbox.svg" />
+                                </md-button>
+                                <md-button class="md-icon-button" aria-label="More">
+                                    <img src="imgs/more_vert_2.svg" />
+                                </md-button>
+
+                            </div>
+                            <div class="main-info-LR" >
+
+
+                                <span>500+</span>
+                                <div>follower</div>
+
+
+
+
+                            </div>
+
+
+                            <div class="main-fab">
+                                <md-button class="md-fab md-primary md-hue-2">
+                                    <md-icon class="material-icons">&#xE7FE;</md-icon>
+
+                                </md-button>
+                            </div>
+
+                            <md-card-title>
+                                <md-card-title-media class="avatar-container">
+                                    <div class="md-media-lg">
+                                        <img src="imgs/1212202.png"/>
+                                    </div>
+                                </md-card-title-media>
+                                <md-card-title-text class="name-container" >
+                                    <div class="md-headline">
+                                        Phạm Ngọc Linh
+                                    </div>
+                                    <div class="md-subhead-1">
+                                        Sinh viên công nghệ thông tin 
+                                    </div>
+                                    <div class="md-subhead-2">
+                                        TP Hồ Chí Minh  |  0987 314 418
+                                    </div>
+
+                                </md-card-title-text>
+
+                            </md-card-title>
+
+                        </div>
+                        <md-divider ng-if="!$last"></md-divider>
+
+
+                        <!--                    <md-card-actions layout="row" layout-align="start center">
+                                                <md-divider ng-if="!$last"></md-divider>
+                                                <md-button>Download</md-button>
+                                                <md-button>Start</md-button>
+                                                <md-card-icon-actions>
+                                                    <md-button class="md-icon-button" aria-label="icon">
+                                                        <md-icon class="material-icons">add</md-icon>
+                                                    </md-button>
+                                                </md-card-icon-actions>
+                                            </md-card-actions>-->
+                        <div>
+                            <md-tabs md-dynamic-height md-border-bottom>
+                                <md-tab class="kk" label="Background">
+                                    <md-content class="md-padding">
+                                        <h1 class="md-display-2">Tab One</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+                                    </md-content>
+                                </md-tab>
+                                <md-tab label="Connections">
+                                    <md-content class="md-padding">
+                                        <h1 class="md-display-2">Tab Two</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
+                                        <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
+                                        <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                    </md-content>
+                                </md-tab>
+                                <md-tab label="Recomendations">
+                                    <md-content class="md-padding">
+                                        <h1 class="md-display-2">Tab Three</h1>
+                                        <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                    </md-content>
+                                </md-tab>
+                                <md-tab label="Groups">
+                                    <md-content class="md-padding">
+                                        <h1 class="md-display-2">Tab Three</h1>
+                                        <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                    </md-content>
+                                </md-tab>
+                                <md-tab label="Following">
+                                    <md-content class="md-padding">
+                                        <h1 class="md-display-2">Tab Three</h1>
+                                        <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                    </md-content>
+                                </md-tab>
+                                <md-tab label="Recent Actitity">
+                                    <md-content class="md-padding">
+                                        <h1 class="md-display-2">Tab Three</h1>
+                                        <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                    </md-content>
+                                </md-tab>
+                            </md-tabs>
+                        </div>
+
+
+                        <!--                        <md-card-content>
+                        
+                                                    
+                                                </md-card-content>-->
+                    </md-card>
+                </div>
+                <div class="l-right">awdawdawda</div>
+
+            </div>
 
 
 
@@ -128,11 +218,6 @@
 
 
 
-        </div>
-
-
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -152,19 +237,19 @@
 
 
 
-        <!--
-        Copyright 2016 Google Inc. All Rights Reserved. 
-        Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
-        -->
-        <script src='js/angular.js'></script>
-        <script src='js/angular-animate.min.js'></script>
+            <!--
+            Copyright 2016 Google Inc. All Rights Reserved. 
+            Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+            -->
+            <script src='js/angular.js'></script>
+            <script src='js/angular-animate.min.js'></script>
 
-        <script src='js/angular-aria.min.js'></script>
+            <script src='js/angular-aria.min.js'></script>
 
 
-        <script src='js/angular-material.js'></script>
+            <script src='js/angular-material.js'></script>
 
-        <script src="js/index.js"></script>
+            <script src="js/index.js"></script>
 
 
 
