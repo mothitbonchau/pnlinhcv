@@ -1,0 +1,39 @@
+[
+	{
+		"job":"ceo",
+		"where":"Linkedin",
+		"time":"December 2008 - Present",
+		"summary":"Connecting the world's professionals to make them more productive and successful. Since joining the company in December 2008, LinkedIn has expanded its global platform to 23 languages and more than 30 offices around the world, grown its membership base from 33M to more than 347M, and increased its revenue from $78M to over $2.2B in 2014.",
+		"logo":"imgs/exp_logo.png",
+		"media":[
+			{
+				"img":"imgs/media01.jpg",
+				"caption":"LinkedIn's Vision for the Next 10 Years"
+			},
+			{
+				"img":"imgs/media02.jpg",
+				"caption":"Bloomberg: LinkedIn Growth Has Reached 'Critical Mass'"
+			}
+			
+		]
+	},
+	{
+		"job":"Vice President Online",
+		"where":"Warner Bro",
+		"time":"September 1994 - March 2000 (5 years 7 months)",
+		"summary":"Helped oversee Warner Bros.' online efforts, including Warner Bros. Online and Entertaindom (one of the web's first original entertainment destination sites). ",
+		"logo":"imgs/exp_logo_2.png",
+		"media":[]
+	},
+	{
+		"job":"Member, Board of Directors",
+		"where":"DonorsChoose",
+		"time":"2007 - Present (9 years)",
+		"summary":"One of the web's leading philanthropic marketplaces, designed to enable teachers to upload classroom projects in need of funding, and for anyone to select and fund a project.",
+		"logo":"imgs/exp_logo_1.png",
+		"media":[
+			
+			
+		]
+	}
+]
