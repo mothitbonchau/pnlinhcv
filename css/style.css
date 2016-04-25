@@ -1,10 +1,18 @@
 .toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
     color: white; }
 
-body{font-family: Roboto;}
+body{font-family: Roboto; background: #fafafa;}
+md-content.md-default-theme, md-content {
 
-#logo {font-family:MyriadProBold; font-size: 25px; float: left }
-#logo2 {font-family:MyriadProBold; font-size: 25px; float: left; color: #0277bd; background-color: white;margin-left: 3px; padding: 0px 3px;border-radius: 2px;height: 35px;}
+    background-color: white;
+}
+.normal-text{
+    text-transform: capitalize!important;
+}
+.col-md-4, .col-md-8{
+    padding: 0px;
+    margin: 0px;
+}
 
 .main-nav {
     height: 56px;
@@ -31,24 +39,10 @@ body{font-family: Roboto;}
 
 .is-centered
 {
-    margin-top: 80px;
+    margin-top: 45px;
 
 }
 
-.card-panel {
-    margin-left: 20px;
-    padding: 20px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    border-radius: 2px;
-    background-clip: padding-box;
-    background-color: #fff;
-    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    -moz-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
-    border-color: activecaption;
-    border-width: 2px;
-}
 
 .img-avatar-container{
     padding: 30px;
@@ -118,9 +112,13 @@ body{font-family: Roboto;}
     margin-top: 8px;
 }
 
+.non-visible{
+    display: none;
+}
 .visible{
     display: block!important;
 }
+
 @media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 800px){
     .main-nav ul {
         box-shadow: 0 2px 5px rgba(0,0,0,0.3);
@@ -227,7 +225,7 @@ body{font-family: Roboto;}
 }
 
 .card-container{
-
+    margin: 26px 0;
 }
 
 
@@ -257,11 +255,11 @@ body{font-family: Roboto;}
     padding: 20px;
 }
 .tab-content-title-container{
-    padding: 5px;
+    padding: 20px 5px;
 }
 .tab-content-title-container span{
-    font-size: 18px;
-    padding-top: 8px;
+    font-size: 22px;
+    padding-top: 3px;
     float: left;
 
 }
@@ -288,6 +286,7 @@ body{font-family: Roboto;}
 
 .tab-content-exp-header{
     clear: both;
+    padding: 5px 0;
 }
 .img-exp-header{
     width: 60px;
@@ -305,20 +304,28 @@ body{font-family: Roboto;}
 }
 .text-exp-header-sub{
     font-size: 15px;
-    line-height:20px;
+    line-height:22px;
 }
 
 .text-exp-header-sub-2{
     color: #66696a;
     font-size: 15px;
-    line-height: 20px;
+    line-height: 22px;
+}
+.media-data, .media-data-fix{
+    position: relative;
+    padding: 10px 15px;
+    float: left;
+}
+
+.media-data-fix{
+    width: 33%;
 }
 .media-data{
     width: 49%;
-    position: relative;
-    padding: 10px 15px;
-    display: none;
 }
+
+
 .media-image {
     background-position: center center;
     background-repeat: no-repeat;
@@ -327,22 +334,22 @@ body{font-family: Roboto;}
     height: 160px;
 }
 
- .media-image .thumbnail {
-    
+.media-image .thumbnail {
+
     opacity: 0;
     width: 100%;
     height: 100%;
 }
 
 .media-desc {
- 
+
     width: 100%;
     height: 45px;
     background-color: #f1f1f1;
 }
 
 .media-desc .description {
-  
+
     white-space: nowrap;
     overflow: hidden;
     -ms-text-overflow: ellipsis;
@@ -361,4 +368,66 @@ body{font-family: Roboto;}
 }
 .clear{
     clear: both;
+}
+
+.fix-width{
+    width: 33%!important;
+}
+.media-data-container:hover{
+
+    outline: 3px solid #0277bd;
+}
+a {
+    text-decoration: none !important;
+    border: none; 
+}
+
+.skill-container{
+    padding: 8px;
+}
+.skill-title{
+    padding: 15px 0 10px 11px;
+    font-size: 18px;
+}
+.skill-btn-container{
+    padding: 10px 5px 0 11px;
+}
+.skill-btn-left{
+    background:  #0277bd;
+    color: white;
+    float: left;
+    text-shadow: #666 0 1px 0;
+    padding: 6px 2px;
+    font-weight: bold;
+    border-radius: 5px 0 0 5px;
+    border-bottom: 1px solid  #0277bd;
+    width: 30px;
+    text-align: center;
+}
+.skill-btn-right{
+    float: left;
+    padding: 6px 15px;
+    border-radius: 0 5px 5px 0;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background: #f0f0f0;
+
+}
+
+.md-padding ul{
+    margin: 3px;
+    font-size: 18px;
+    color: #66696a;
+}
+
+
+.list-container{
+    padding: 10px;
+}
+.right-card-head{
+    
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .010em;
+    line-height: 24px;
 }

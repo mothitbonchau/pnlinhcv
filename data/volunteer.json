@@ -1,0 +1,27 @@
+{
+	"about":[
+		{
+			"text":"Economic Empowerment"
+		},
+		{
+			"text":"Education"
+		},
+		{
+			"text":"Health"
+		}
+	],
+	"support":[
+		{
+			"text":"Boys & Girls Clubs of the Peninsula"
+		},
+		{
+			"text":"DonorsChoose.org"
+		},
+		{
+			"text":"Malaria No More"
+		},
+		{
+			"text":"Venture For America"
+		}
+	]
+}

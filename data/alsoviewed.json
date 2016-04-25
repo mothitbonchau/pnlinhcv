@@ -1,0 +1,47 @@
+[
+	{
+		"img":"imgs/also/also (1).jpg",
+		"name":"Richard Branson",
+		"job":"Founder at Virgin Group"
+	},
+	{
+		"img":"imgs/also/also (2).jpg",
+		"name":"Randi Zuckerberg",
+		"job":"Founder & CEO at Zuckerberg Media"
+	},
+	{
+		"img":"imgs/also/also (3).jpg",
+		"name":"Sean Parker",
+		"job":"Board Member, Investor at Spotify"
+	},
+	{
+		"img":"imgs/also/also (4).jpg",
+		"name":"Arianna Huffington",
+		"job":"President and Editor-in-Chief at The Huffington Post Media Group"
+	},
+	{
+		"img":"imgs/also/also (5).jpg",
+		"name":"Mark Cuban",
+		"job":"President"
+	},
+	{
+		"img":"imgs/also/also (6).jpg",
+		"name":"Bill Gates",
+		"job":"Co-chair, Bill & Melinda Gates Foundation"
+	},
+	{
+		"img":"imgs/also/also (7).jpg",
+		"name":"Eduardo Saverin",
+		"job":"Co-Founder, Facebook Inc."
+	},
+	{
+		"img":"imgs/also/also (8).jpg",
+		"name":"Jack Welch",
+		"job":"Executive Chairman, The Jack Welch Management Institute"
+	},
+	{
+		"img":"imgs/also/also (9).jpg",
+		"name":"Michael Dell",
+		"job":"Chairman and CEO"
+	}
+]

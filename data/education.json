@@ -1,0 +1,14 @@
+[
+	{
+		"img":"imgs/edu_logo_2.png",
+		"name":"University of Science",
+		"subject":"Information Technology",
+		"time":"2012 - 2016"
+	},
+	{
+		"img":"imgs/edu_logo_1.png",
+		"name":"University of Pennsylvania",
+		"subject":"Bachelor of Science, Economics",
+		"time":"1988 - June 1992"
+	}
+]

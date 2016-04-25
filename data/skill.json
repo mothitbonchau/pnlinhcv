@@ -1,0 +1,102 @@
+{
+	"skill":[
+		{
+			"count":"99+",
+			"desc":"Business Strategy"
+		},
+		{
+			"count":"99+",
+			"desc":"Leadership"
+		},
+		{
+			"count":"99+",
+			"desc":"Strategy"
+		},
+		{
+			"count":"99+",
+			"desc":"Entrepreneurship"
+		},
+		{
+			"count":"96",
+			"desc":"Product Marketing"
+		},
+		{
+			"count":"90+",
+			"desc":"Strategic Planning"
+		},
+		{
+			"count":"87",
+			"desc":"Executive Management"
+		},
+		{
+			"count":"73",
+			"desc":"Product Development"
+		},
+		{
+			"count":"76",
+			"desc":"Product Management"
+		},
+		{
+			"count":"88+",
+			"desc":"LinkedIn"
+		}
+	],
+	"know":[
+		{
+			"count":"53",
+			"desc":"Social Media"
+		},
+		{
+			"count":"34",
+			"desc":"User Experience"
+		},
+		{
+			"count":"23",
+			"desc":"Corporate Development"
+		},
+		{
+			"count":"11",
+			"desc":"Non-profits"
+		},
+		{
+			"count":"22",
+			"desc":"Analytics"
+		},
+		{
+			"count":"23",
+			"desc":"Mergers & Acquisitions"
+		},
+		{
+			"count":"43",
+			"desc":"Team Leadership"
+		},
+		{
+			"count":"87",
+			"desc":"Thought Leadership"
+		},
+		{
+			"count":"32",
+			"desc":"Business Operations"
+		},
+		{
+			"count":"43",
+			"desc":"Leadership Development"
+		},
+		{
+			"count":"56",
+			"desc":"Nonprofits"
+		},
+		{
+			"count":"48",
+			"desc":"Mentoring"
+		},
+		{
+			"count":"56",
+			"desc":"Mobile Applications"
+		},
+		{
+			"count":"76",
+			"desc":"Awesomeness"
+		}
+	]
+}
