@@ -1,51 +1,51 @@
 [
 	{
-		"job":"ceo",
-		"where":"Linkedin",
+		"job":"Deverloper",
+		"where":"Lorem Ipsum",
 		"time":"December 2008 - Present",
-		"summary":"Connecting the world's professionals to make them more productive and successful. Since joining the company in December 2008, LinkedIn has expanded its global platform to 23 languages and more than 30 offices around the world, grown its membership base from 33M to more than 347M, and increased its revenue from $78M to over $2.2B in 2014.",
+		"summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales, nibh id tincidunt luctus, ex nibh convallis tortor, ac ornare ipsum risus sit amet dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce urna metus, efficitur at efficitur posuere, rutrum dapibus lacus. Proin malesuada mi at lobortis commodo.",
 		"logo":"imgs/exp_logo.png",
 		"media":[
 			{
 				"img":"imgs/media01.jpg",
-				"caption":"LinkedIn's Vision for the Next 10 Years"
+				"caption":"Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 			},
 			{
 				"img":"imgs/media02.jpg",
-				"caption":"Bloomberg: LinkedIn Growth Has Reached 'Critical Mass'"
+				"caption":"Curabitur euismod nibh sed lacus tristique, quis commodo nulla cursus"
 			},
 			{
-				"img":"imgs/media02.jpg",
-				"caption":"Bloomberg: LinkedIn Growth Has Reached 'Critical Mass'"
+				"img":"imgs/media03.jpg",
+				"caption":"Pellentesque id leo ut eros vulputate aliquet."
 			},
 			{
-				"img":"imgs/media01.jpg",
-				"caption":"LinkedIn's Vision for the Next 10 Years"
+				"img":"imgs/media04.jpg",
+				"caption":"In et ante eu enim feugiat convallis."
 			},
 			{
-				"img":"imgs/media02.jpg",
-				"caption":"Bloomberg: LinkedIn Growth Has Reached 'Critical Mass'"
+				"img":"imgs/media05.jpg",
+				"caption":"Quisque et turpis vel augue scelerisque interdum vitae sagittis risus"
 			},
 			{
-				"img":"imgs/media02.jpg",
+				"img":"imgs/media06.jpg",
 				"caption":"Bloomberg: LinkedIn Growth Has Reached 'Critical Mass'"
 			}
 			
 		]
 	},
 	{
-		"job":"Vice President Online",
+		"job":"Member",
 		"where":"Warner Bro",
 		"time":"September 1994 - March 2000 (5 years 7 months)",
-		"summary":"Helped oversee Warner Bros.' online efforts, including Warner Bros. Online and Entertaindom (one of the web's first original entertainment destination sites). ",
+		"summary":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla semper posuere. Fusce vestibulum sagittis lacus eu elementum. Nullam dapibus sit amet tortor ut egestas.",
 		"logo":"imgs/exp_logo_2.png",
 		"media":[]
 	},
 	{
-		"job":"Member, Board of Directors",
+		"job":"Member",
 		"where":"DonorsChoose",
 		"time":"2007 - Present (9 years)",
-		"summary":"One of the web's leading philanthropic marketplaces, designed to enable teachers to upload classroom projects in need of funding, and for anyone to select and fund a project.",
+		"summary":"In et ante eu enim feugiat convallis. Morbi aliquam id mauris eu convallis. Proin in laoreet sem. Nam tincidunt dui semper neque maximus finibus. Etiam dignissim et elit ut cursus. Proin eu vestibulum est. ",
 		"logo":"imgs/exp_logo_1.png",
 		"media":[
 			

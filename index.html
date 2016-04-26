@@ -11,23 +11,18 @@
         <link rel="stylesheet" href="css/material-icons.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
-
     <body>
-
         <div ng-controller="AppCtrl"  class="toolbardemoBasicUsage" ng-app="MyApp">
             <md-toolbar  class="md-hue-2  main-nav l-pinned-top l-layer-5">
                 <nav>
                     <h1>
                         <a class="md-button md-ink-ripple" ng-transclude="" href="#" md-button>
                             <div class="md-ripple-container"></div></a>
-
                     </h1>
 
                     <button class="main-nav-button main-nav-mobile-trigger l-right md-button md-ink-ripple" type="button" ng-transclude="" aria-label="View Menu" ng-click="showDocsNav = !showDocsNav" md-button="md-button">
                         <span class="ng-scope">Menu </span>
                     </button>
-
-
                     <ul ng-class="showDocsNav ? 'visible' : ''">
                         <li class="l-left">
                             <a class="main-nav-button md-button md-ink-ripple" ng-transclude="" href="#" md-button="">
@@ -75,21 +70,12 @@
                         </li>
                     </ul> 
                 </nav>
-
             </md-toolbar>
-
-
-
             <div class="is-centered"  >
-
-
                 <div class="container-fluid">
                     <div class="col-md-8"  >
                         <div class="card-container" >
-
                             <md-card>
-
-
                                 <div class="main-inf-container">
                                     <div class="main-info-UR" >
                                         <md-button class="md-icon-button" aria-label="More">
@@ -98,7 +84,6 @@
                                         <md-button class="md-icon-button" aria-label="More">
                                             <img src="imgs/more_vert_2.svg" />
                                         </md-button>
-
                                     </div>
                                     <div class="main-info-LR" >
                                         <span>{{info.follower}}</span><div>followers</div>
@@ -112,7 +97,6 @@
 
                                         </md-button>
                                     </div>
-
                                     <md-card-title class="card-title-container">
                                         <md-card-title-media class="avatar-container">
                                             <div class="md-media-lg">
@@ -149,11 +133,6 @@
                                                     <p ng-repeat="item in summaryList">{{item.text}}</p>
                                                     <md-divider ng-if="!$last"></md-divider>
                                                 </div>
-
-
-
-
-
                                                 <div class="tab-content-title-container">
                                                     <i class="material-icons icon-dark-color">&#xE8FC;</i>
                                                     <span >Experience</span>
@@ -186,32 +165,22 @@
                                                     </div>
                                                 </div>
                                                 <md-divider ng-if="!$last" class="clear"></md-divider>
-
-
-
                                                 <div class="tab-content-title-container ">
                                                     <i class="material-icons icon-dark-color">&#xE3B8;</i>
                                                     <span >Skill</span>
                                                 </div>
-
                                                 <div class="clear skill-title">Top Skill</div>
-                                                <div ng-repeat="item in skillList.skill" class="skill-btn-container clear">
+                                                <div ng-repeat="item in skillList.skill" class="skill-btn-container l-left">
                                                     <div class="skill-btn-left">{{item.count}}</div>
                                                     <div class="skill-btn-right">{{item.desc}}</div>
                                                 </div>
                                                 <div class="clear skill-title clear">Jeff also knows about...</div>
-
-
                                                 <div ng-repeat="item in skillList.know" class="skill-btn-container l-left">
                                                     <div class="skill-btn-left">{{item.count}}</div>
                                                     <div class="skill-btn-right">{{item.desc}}</div>
                                                 </div>
                                                 <div class="skill-container clear"></div>
                                                 <md-divider ng-if="!$last" class="clear"></md-divider>
-
-
-
-
                                                 <div class="tab-content-title-container ">
                                                     <i class="material-icons icon-dark-color">&#xE80C;</i>
                                                     <span >Education</span>
@@ -249,118 +218,67 @@
                                                 <ul class="text-exp-header-sub">
                                                     <li ng-repeat="item in volunteerList.support"><a href="#" >{{item.text}}</a></li>
                                                 </ul> 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                             </md-content>
                                         </md-tab>
                                         <md-tab label="Connections">
                                             <md-content class="md-padding">
                                                 <h1 class="md-display-2">Tab Two</h1>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi. Aliquam erat volutpat. Nam placerat, tortor in ultrices porttitor, orci enim rutrum enim, vel tempor sapien arcu a tellus. Vivamus convallis sodales ante varius gravida. Curabitur a purus vel augue ultrices ultricies id a nisl. Nullam malesuada consequat diam, a facilisis tortor volutpat et. Sed urna dolor, aliquet vitae posuere vulputate, euismod ac lorem. Sed felis risus, pulvinar at interdum quis, vehicula sed odio. Phasellus in enim venenatis, iaculis tortor eu, bibendum ante. Donec ac tellus dictum neque volutpat blandit. Praesent efficitur faucibus risus, ac auctor purus porttitor vitae. Phasellus ornare dui nec orci posuere, nec luctus mauris semper.</p>
-                                                <p>Morbi viverra, ante vel aliquet tincidunt, leo dolor pharetra quam, at semper massa orci nec magna. Donec posuere nec sapien sed laoreet. Etiam cursus nunc in condimentum facilisis. Etiam in tempor tortor. Vivamus faucibus egestas enim, at convallis diam pulvinar vel. Cras ac orci eget nisi maximus cursus. Nunc urna libero, viverra sit amet nisl at, hendrerit tempor turpis. Maecenas facilisis convallis mi vel tempor. Nullam vitae nunc leo. Cras sed nisl consectetur, rhoncus sapien sit amet, tempus sapien.</p>
-                                                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
                                             </md-content>
                                         </md-tab>
                                         <md-tab label="Recomendations">
                                             <md-content class="md-padding">
-                                                <h1 class="md-display-2">Tab Three</h1>
-                                                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                                <h1 class="md-display-2">Recomendations</h1>
+
                                             </md-content>
                                         </md-tab>
                                         <md-tab label="Groups">
                                             <md-content class="md-padding">
-                                                <h1 class="md-display-2">Tab Three</h1>
-                                                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                                <h1 class="md-display-2">Groups</h1>
+
                                             </md-content>
                                         </md-tab>
                                         <md-tab label="Following">
                                             <md-content class="md-padding">
-                                                <h1 class="md-display-2">Tab Three</h1>
-                                                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                                <h1 class="md-display-2">Following</h1>
+
                                             </md-content>
                                         </md-tab>
                                         <md-tab label="Recent Actitity">
                                             <md-content class="md-padding">
-                                                <h1 class="md-display-2">Tab Three</h1>
-                                                <p>Integer turpis erat, porttitor vitae mi faucibus, laoreet interdum tellus. Curabitur posuere molestie dictum. Morbi eget congue risus, quis rhoncus quam. Suspendisse vitae hendrerit erat, at posuere mi. Cras eu fermentum nunc. Sed id ante eu orci commodo volutpat non ac est. Praesent ligula diam, congue eu enim scelerisque, finibus commodo lectus.</p>
+                                                <h1 class="md-display-2">Recent Actitity</h1>
+
                                             </md-content>
                                         </md-tab>
                                     </md-tabs>
                                 </div>
-
-
-                                <md-card-content>
-
-
-                                </md-card-content>
+                                <md-card-content></md-card-content>
                             </md-card>
                         </div>
-
-
                     </div>
                     <div class="col-md-4" >
+
                         <md-card>
                             <md-card-title>
                                 <span class="right-card-head">People also viewed</span>
                             </md-card-title>
-                            <md-content >
-                                <md-list flex>
+                            <md-card-content>
+                                <md-list >
                                     <md-list-item class="md-3-line" ng-repeat="item in alsoList" ng-click="null">
                                         <img ng-src="{{item.img}}" class="md-avatar">
                                         <div class="md-list-item-text" layout="column">
                                             <h3>{{item.name}}</h3>
                                             <h4>{{item.job}}</h4>
-                                            
                                         </div>
                                         <md-divider md-inset ng-if="!$last"></md-divider>
                                     </md-list-item>
                                 </md-list>
-                            </md-content>
+                            </md-card-content>
 
                         </md-card>
                     </div>
                 </div>
 
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             <script src='js/angular.min.js'></script>
             <script src='js/angular-animate.min.js'></script>
             <script src='js/angular-aria.min.js'></script>
@@ -368,9 +286,5 @@
             <script src='js/angular-material.min.js'></script>
             <script src="js/index.js"></script>
             <script src="js/bootstrap.min.js"></script>
-
-
-
-
-    </body>
+        </body>
 </html>

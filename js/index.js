@@ -15,13 +15,13 @@ angular.module('MyApp', ['ngMaterial'])
                 };
             };
 
-//data/infomation.json
-            $http.get('https://api.myjson.com/bins/4di92')
+//
+            $http.get('data/infomation.json')
                     .then(function (res) {
                         $scope.info = res.data;
                     });
-//                    data/summary.json
-            $http.get('https://api.myjson.com/bins/3jaae')
+//                    
+            $http.get('data/summary.json')
                     .then(function (res) {
                         $scope.summaryList = res.data;
                     });
@@ -42,6 +42,7 @@ angular.module('MyApp', ['ngMaterial'])
                     .then(function (res) {
                         $scope.volunteerList = res.data;
                     });
+               
 
             $http.get('data/alsoviewed.json')
                     .then(function (res) {

@@ -1,0 +1,9 @@
+{
+  "firebase": "1212202-cv",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

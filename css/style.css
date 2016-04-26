@@ -1,11 +1,18 @@
 .toolbardemoBasicUsage md-toolbar md-icon.md-default-theme {
-    color: white; }
+    color: #fafafa; }
 
 body{font-family: Roboto; background: #fafafa;}
 md-content.md-default-theme, md-content {
 
     background-color: white;
 }
+
+
+.toolbardemoBasicUsage{
+    background: #fafafa;
+}
+
+
 .normal-text{
     text-transform: capitalize!important;
 }
@@ -226,6 +233,7 @@ md-content.md-default-theme, md-content {
 
 .card-container{
     margin: 26px 0;
+    min-width: 550px;
 }
 
 
@@ -363,9 +371,7 @@ md-content.md-default-theme, md-content {
     margin: 0px;
     padding: 10px;
 }
-.toolbardemoBasicUsage{
-    background: white;
-}
+
 .clear{
     clear: both;
 }
@@ -425,7 +431,7 @@ a {
     padding: 10px;
 }
 .right-card-head{
-    
+
     font-size: 18px;
     font-weight: 400;
     letter-spacing: .010em;
