@@ -40,7 +40,7 @@
                     <!-- Use floating label instead of placeholder -->
                     <label>Logo</label>
                     <md-icon class="material-icons">&#xE3F4;</md-icon>
-                    <input  name="job" ng-model="dialogData.img" type="text" required>
+                    <input  name="job" ng-model="dialogData.img" type="text" ng-model-options="{ updateOn: 'blur' }" required>
                 </md-input-container>
 
                 

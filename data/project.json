@@ -1,0 +1,49 @@
+﻿[
+{
+	"name":"My Dictionary",
+	"time":"March 2015",
+	"desc":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla semper posuere. Fusce vestibulum sagittis lacus eu elementum. Nullam dapibus sit amet tortor ut egestas.",
+	"member":
+	[
+		{
+			"img":"imgs/1212256.png",
+			"name":"GtNghia",
+			"job":"Team Leader"
+		},
+		{
+			"img":"imgs/1212202.png",
+			"name":"PnLinh",
+			"job":"Android Developer"
+		},
+		
+		{
+			"img":"imgs/1212203.png",
+			"name":"HvLinh",
+			"job":"UI/UX Designer"
+		},
+		{
+			"img":"imgs/12128033.png",
+			"name":"NttDuong",
+			"job":"UI/UX Designer"
+		}
+	]
+},
+{
+	"name":"Clinic Manager ",
+	"time":"April 2016",
+	"desc":"In et ante eu enim feugiat convallis. Morbi aliquam id mauris eu convallis. Proin in laoreet sem. Nam tincidunt dui semper neque maximus finibus. Etiam dignissim et elit ut cursus. Proin eu vestibulum est. ",
+	"member":
+	[
+		{
+			"img":"imgs/1212202.png",
+			"name":"PnLinh",
+			"job":"Java Developer"
+		},
+		{
+			"img":"imgs/1212256.png",
+			"name":"Gtn Nghia",
+			"job":"UI/UX Designer"
+		}
+	]
+}
+]

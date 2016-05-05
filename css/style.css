@@ -95,7 +95,7 @@ md-content.md-default-theme, md-content {
     display: none;
 }
 .visible{
-    display: inline!important;
+    display: inline-block!important;
 }
 h1,h2,h3,span{
     margin: 0;
@@ -325,6 +325,9 @@ a {
 #bg-summary  p{
     margin: 0 0 15px 0;
 }
+#bg-project h1::before{
+   content: '\e873'; 
+}
 .bg-item{
     margin-top: 28px;
     margin-bottom: 8px;
@@ -380,9 +383,6 @@ a {
     width: 75px;
 }
 
-.bg-experience-media-container{
-    margin-bottom: 23px;
-}
 
 
 #bg-experience  h1::before{
@@ -393,9 +393,9 @@ a {
     content: '\e3b8'; 
 }
 
-.media-data, .media-data-fix{
+.media-data, .media-data-fix {
     position: relative;
-    padding: 0 10px 23px 10px;
+    padding: 18px 10px 0 10px;
     float: left;
 }
 
@@ -529,3 +529,14 @@ md-input-container {
     margin: 0 0 5px 0;
     
 }
+#bg-project .col-xs-6, #bg-project .col-sm-4{
+    padding: 0px 0 10px 12px;;
+    margin: 0;
+}
+#bg-project .row{
+    
+    margin: 0;
+}
+
+/*project*/
+

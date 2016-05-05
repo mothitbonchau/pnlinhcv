@@ -2,7 +2,7 @@
     <form  name="mF">
         <md-toolbar>
             <div class="md-toolbar-tools">
-                <h2 class="dialog-title">Edit Overview</h2>
+                <h2 class="dialog-title">{{(isAdd?'Add':'Edit')}} Experience</h2>
                 <span flex></span>
                 <md-button class="md-icon-button" ng-click="cancel()">
                     <md-icon class="material-icons dialog-title" >&#xE5CD;</md-icon>
@@ -11,6 +11,7 @@
         </md-toolbar>
 
         <md-dialog-content>
+
             <div class="md-dialog-content">
                 <div  layout-gt-sm="row">
                     <md-input-container flex-gt-sm="" class="md-icon-float md-block ">
@@ -36,7 +37,7 @@
                     <md-input-container flex="" class="md-icon-float md-block ">
                         <label>Logo</label>
                         <md-icon class="material-icons">&#xE3F4;</md-icon>
-                        <input  name="job" ng-model="dialogData.logo" type="text" required>
+                        <input  name="job" ng-model="dialogData.logo" type="text" ng-model-options="{updateOn: 'blur'}" required>
                     </md-input-container>
                     <img class="dialog-logo" ng-src="{{dialogData.logo}}" width="60px" height="60px">
                 </div>
@@ -46,35 +47,33 @@
                     <textarea ng-model="dialogData.summary"  rows="3" required  md-select-on-focus></textarea>
                 </md-input-container>
 
-
-                <div  layout-gt-sm="row" ng-show="dialogData.media.length > 0"  ng-repeat="med in dialogData.media">
-                    <md-input-container flex-gt-sm="" class="md-icon-float md-block ">
-                        <label>Image - {{$index+1}}</label>
+                <div  ng-if="check(dialogData.media) && isAdd" ng-init="dialogData.media = [{}]"></div>
+                
+                <div  layout="row" ng-if="dialogData.media.length > 0"  ng-repeat="med in dialogData.media">
+                    <md-input-container flex=""  class="md-icon-float md-block ">
+                        <label>Image - {{$index + 1}}</label>
                         <md-icon  class="material-icons">&#xE3F4;</md-icon>
-                        <input  ng-model="med.img" type="text" required>
+                        <input  ng-model="med.img" type="text"required >
                     </md-input-container>
 
-                    <md-input-container flex-gt-sm="" class="md-icon-float md-block ">
-                        <label>Caption - {{$index+1}}</label>
+                    <md-input-container flex="" class="md-icon-float md-block ">
+                        <label>Caption - {{$index + 1}}</label>
                         <md-icon class="material-icons">&#xE8F8;</md-icon>
-                        <input  name="job" ng-model="med.caption" type="text" required>
+                        <input  name="job" ng-model="med.caption" type="text"required >
                     </md-input-container>
+
+                    <md-button class="md-icon-button" aria-label="More" ng-click="dialogData.media.splice($index, 1)">
+                        <md-icon class="material-icons " ng-class="md - 24">delete</md-icon>
+                    </md-button>
+
                 </div>
-
-
-
-
-
-
-
-
-
-
             </div>
         </md-dialog-content>
 
         <md-dialog-actions layout="row">
             <md-button ng-click="cancel()" >Cancel</md-button>
+            <span flex></span>
+            <md-button ng-click="check(dialogData.media) ? (dialogData.media = [{}]) : dialogData.media.push({})" >Add A Media</md-button>
             <span flex></span>
             <md-button ng-disabled="!mF.$valid" ng-click="onOK(dialogData)">OK</md-button>
 

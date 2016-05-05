@@ -12,14 +12,20 @@
 
         <md-dialog-content>
             <div class="md-dialog-content">
-                <md-input-container class="md-icon-float md-block" ng-repeat="item in dialogData">
-                    <!-- Use floating label instead of placeholder -->
-                    <label>Volunteer - {{$index +1}}</label>
-                    <md-icon class="material-icons">&#xE87E;</md-icon>
-                    <input  name="name" ng-model="item.text" type="text" required>
-                </md-input-container>
+                <div layout="row" ng-repeat="item in dialogData">
+                    <md-input-container flex="" class="md-icon-float md-block" >
+                        <!-- Use floating label instead of placeholder -->
+                        <label>Volunteer - {{$index + 1}}</label>
+                        <md-icon class="material-icons">&#xE87E;</md-icon>
+                        <input  name="name" ng-model="item.text" type="text" required>
+                    </md-input-container>
 
-               
+                    <md-button class="md-icon-button" aria-label="More" ng-click="dialogData.splice($index, 1)">
+                        <md-icon class="material-icons " ng-class="md - 24">delete</md-icon>
+                    </md-button>
+                </div>
+
+
 
             </div>
         </md-dialog-content>

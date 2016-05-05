@@ -1,0 +1,41 @@
+<md-dialog flex="70" aria-label="Edit Experience"  >
+    <form  name="mF">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2 class="dialog-title">{{(isAdd?'Add':'Edit')}} Experience Media</h2>
+                <span flex></span>
+                <md-button class="md-icon-button" ng-click="cancel()">
+                    <md-icon class="material-icons dialog-title" >&#xE5CD;</md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+
+        <md-dialog-content>
+            <div class="md-dialog-content">
+                <div  layout-gt-sm="row"   >
+                    <md-input-container flex-gt-sm="" class="md-icon-float md-block ">
+                        <label>Image - {{$index + 1}}</label>
+                        <md-icon  class="material-icons">&#xE3F4;</md-icon>
+                        <input  ng-model="dialogData.img" type="text" ng-model-options="{ updateOn: 'blur' }"  required>
+                    </md-input-container>
+
+                    <md-input-container flex-gt-sm="" class="md-icon-float md-block ">
+                        <label>Caption - {{$index + 1}}</label>
+                        <md-icon class="material-icons">&#xE8F8;</md-icon>
+                        <input  name="job" ng-model="dialogData.caption" type="text" required >
+                    </md-input-container>
+                </div>
+                <div style="text-align: center;margin-top: 10px;">
+                    <img ng-src="{{dialogData.img}}" height="150px" width="200px">
+                </div>
+            </div>
+        </md-dialog-content>
+
+        <md-dialog-actions layout="row">
+            <md-button ng-click="cancel()" >Cancel</md-button>
+            <span flex></span>
+            <md-button ng-disabled="!mF.$valid" ng-click="onOK(dialogData)">OK</md-button>
+
+        </md-dialog-actions>
+    </form>
+</md-dialog>

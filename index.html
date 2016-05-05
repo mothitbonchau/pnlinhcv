@@ -2,7 +2,6 @@
 <html >
     <head>
         <meta charset="UTF-8">
-
         <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
         <title>Phạm Ngọc Linh - 1212202</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
@@ -84,7 +83,10 @@
                                     <div class="profile-overview ">
                                         <div id="name-container">
                                             <h1 edit-hover="visible">{{info.name}} 
-                                                <i ng-click="showEdit($event,'overview.html', info)" class="material-icons non-visible">mode_edit</i>
+                                                <i ng-click="showEdit($event, 'overview.html', info)" class="material-icons non-visible">
+                                                    mode_edit  
+                                                    <md-tooltip>Edit Overview</md-tooltip>
+                                                </i>
                                             </h1>
 
                                         </div>
@@ -137,7 +139,12 @@
                                                     <div id="bg-summary">
                                                         <div class="bg-item-header" ng-init="editShow = false">
                                                             <h1 edit-hover="visible">Summary
-                                                                <i ng-click="showEdit($event,'summary.html', summaryList)" class="material-icons non-visible">mode_edit</i>
+                                                                <div class="non-visible">
+                                                                    <i ng-click="showEdit($event, 'summary.html', summaryList, false)" class="material-icons md-24">
+                                                                        mode_edit
+                                                                        <md-tooltip>Edit Summary</md-tooltip>
+                                                                    </i>
+                                                                </div>
                                                             </h1>
                                                         </div>
                                                         <div class="bg-item-body">
@@ -151,16 +158,30 @@
                                                 <div class="bg-item">
                                                     <div id="bg-experience">
                                                         <div class="bg-item-header">
-                                                            <h1>Experience</h1>
+                                                            <h1 edit-hover="visible">Experience
+                                                                <i ng-click="showEdit($event, 'experience.html', experienceList, true)" class="material-icons md-24 non-visible">
+                                                                    add
+                                                                    <md-tooltip>Add New Experience</md-tooltip>
+                                                                </i>
+                                                            </h1>
                                                         </div>
-                                                        <div class="bg-item-body clear" ng-repeat="item in experienceList">
+                                                        <div class="bg-item-body clear" >
 
-                                                            <div class="bg-item-body-container" >
+                                                            <div class="bg-item-body-container" ng-repeat="item in experienceList" >
                                                                 <div class="bg-item-body-header">
                                                                     <div>
                                                                         <h2 class="upper"  edit-hover="visible">{{item.job}} 
-                                                                            <i ng-click="showEdit($event,'experience.html', item)" class="material-icons non-visible md-18">mode_edit</i>
-                                                                            
+                                                                            <div class="non-visible">
+                                                                                <i ng-click="showEdit($event, 'experience.html', item, false)" class="material-icons  md-18">
+                                                                                    mode_edit
+                                                                                    <md-tooltip>Edit {{item.job}}</md-tooltip>
+                                                                                </i>
+                                                                                <i ng-click="experienceList.splice($index, 1)" class="material-icons md-18">
+                                                                                    delete
+                                                                                    <md-tooltip>Delete {{item.job}}</md-tooltip>
+                                                                                </i>
+                                                                            </div>
+                                                                        </h2>
                                                                         <h3>{{item.where}}</h3>
                                                                         <h3>{{item.time}}</h3>
 
@@ -170,9 +191,9 @@
                                                                 </div>
                                                                 <p>{{item.summary}}</p>
 
-                                                                <div ng-class="(item.media.length > 0) ? 'visible bg-experience-media-container' : 'non-visible bg-experience-media-container' + ' '">
-                                                                    <div  ng-repeat="med in item.media" ng-class="$index % 5 < 2 ? 'media-data' : 'media-data-fix'">
-                                                                        <div class="media-data-container">
+                                                                <div ng-if="item.media.length > 0" style="overflow: hidden;padding-bottom: 5px;" >
+                                                                    <div  ng-repeat="med in item.media" class="media-data-fix" ng-if="med.img != '' && med.caption != ''">
+                                                                        <div class="media-data-container" >
                                                                             <a href="#">
                                                                                 <div class="media-image thumbnail" style="background-image: url({{med.img}});">
                                                                                     <img class="thumbnail" src="{{med.img}}"/>
@@ -187,17 +208,83 @@
                                                         <md-divider ng-if="!$last"></md-divider>
                                                     </div>
                                                 </div>
+                                                <div class="bg-item">
+                                                    <div id="bg-project">
+                                                        <div class="bg-item-header">
+                                                            <h1 edit-hover="visible">Project
+                                                                <div class="non-visible">
+                                                                    <i  ng-click="showEdit($event, 'project.html', projectList, true)" class="material-icons md-24 ">
+                                                                        add
+                                                                        <md-tooltip>Add new Project</md-tooltip>
+                                                                    </i>
+                                                                </div>
+                                                            </h1>
+                                                        </div>
+                                                        <div class="bg-item-body clear" >
+
+                                                            <div class="bg-item-body-container"  ng-repeat="item in projectList">
+                                                                <div class="bg-item-body-header ">
+                                                                    <div >
+                                                                        <h2  edit-hover="visible">{{item.name}}
+                                                                            <div class="non-visible">
+                                                                                <i  ng-click="showEdit($event, 'project.html', item, false)" class="material-icons md-18 ">
+                                                                                    mode_edit
+                                                                                    <md-tooltip>Edit {{item.name}}</md-tooltip>
+                                                                                </i>
+                                                                                <i  ng-click="projectList.splice($index,1)" class="material-icons md-18 ">
+                                                                                    delete
+                                                                                    <md-tooltip>Delete {{item.name}}</md-tooltip>
+                                                                                </i>
+                                                                            </div>
+                                                                        </h2>
+                                                                        <h3>{{item.time}}</h3>
+
+
+                                                                    </div>
+
+
+                                                                </div>
+                                                                <p>{{item.desc}}</p>
+                                                                <p> <i>{{item.member.length}} team members, including:</i></p>
+                                                                <div style="overflow: hidden;  padding: 0px 15px;" class="row" >
+                                                                    <div class=" col-xs-6 col-sm-4" ng-repeat="mem in item.member">
+
+                                                                        <div  layout="row" >
+                                                                            <img style="align-items: center; margin: auto 10px auto 0;" ng-src="{{mem.img}}" height="50px" width="50px">
+                                                                            <div layout="column" style="margin: auto 0;" >
+                                                                                <div style="line-height: 16px; font-size: 16px; font-weight: bold">{{mem.name}}</div>
+                                                                                <div style="line-height: 16px; font-size: 15px;">{{mem.job}}</div>
+                                                                            </div>
+                                                                        </div> 
+                                                                    </div>
+
+
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                        <md-divider ng-if="!$last"></md-divider>
+                                                    </div>
+                                                </div>
 
                                                 <div class="bg-item">
                                                     <div id="bg-skill" >
                                                         <div class="bg-item-header">
 
-                                                            <h1 >Skill</h1>
+                                                            <h1 >Skill
+                                                            </h1>
                                                         </div>
                                                         <div class="bg-item-body clear">
                                                             <p  edit-hover="visible">Top Skill
-                                                                <i  ng-click="showEdit($event, 'skill.html', skillList.skill)" class="material-icons md-18 non-visible">mode_edit</i></h1>
+                                                                <span class="non-visible">
+                                                                    <i  ng-click="showEdit($event, 'skill.html', skillList.skill, false)" class="material-icons md-18 ">
+                                                                        mode_edit
+                                                                        <md-tooltip>Edit Top Skill</md-tooltip>
+                                                                    </i>
+                                                                </span>
                                                             </p>
+
                                                             <div ng-repeat="item in skillList.skill" class="skill-btn-container l-left">
                                                                 <div class="skill-btn-left">{{item.count}}</div>
                                                                 <div class="skill-btn-right">{{item.desc}}</div>
@@ -205,7 +292,7 @@
                                                         </div>
                                                         <div class="bg-item-body clear" >
                                                             <p edit-hover="visible">Jeff also knows about...
-                                                                <i  ng-click="showEdit($event, 'skill.html', skillList.know)" class="material-icons md-18 non-visible">mode_edit</i></h1>
+                                                                <i  ng-click="showEdit($event, 'skill.html', skillList.know)" class="material-icons md-18 non-visible">mode_edit</i>
                                                             </p>
                                                             <div ng-repeat="item in skillList.know" class="skill-btn-container l-left">
                                                                 <div class="skill-btn-left">{{item.count}}</div>
@@ -220,7 +307,12 @@
                                                 <div class="bg-item">
                                                     <div id="bg-education">
                                                         <div class="bg-item-header">
-                                                            <h1>Education</h1>
+                                                            <h1 edit-hover="visible">Education
+                                                                <i  ng-click="showEdit($event, 'education.html', educationList, true)" class="material-icons md-24 non-visible">
+                                                                    add
+                                                                    <md-tooltip>Add new Project</md-tooltip>
+                                                                </i>
+                                                            </h1>
                                                         </div>
                                                         <div class="bg-item-body clear" ng-repeat="item in educationList">
 
@@ -229,7 +321,16 @@
                                                                     <div >
                                                                         <h2  edit-hover="visible">
                                                                             {{item.name}}
-                                                                            <i  ng-click="showEdit($event, 'education.html', item)" class="material-icons md-18 non-visible">mode_edit</i>
+                                                                            <div class="non-visible">
+                                                                                <i  ng-click="showEdit($event, 'education.html', item)" class="material-icons md-18 ">
+                                                                                    mode_edit
+                                                                                    <md-tooltip>Edit {{item.name}}</md-tooltip>
+                                                                                </i>
+                                                                                <i  ng-click="educationList.splice($index, 1)" class="material-icons md-18 ">
+                                                                                    delete
+                                                                                    <md-tooltip>Delete {{item.name}}</md-tooltip>
+                                                                                </i>
+                                                                            </div>
                                                                         </h2>
                                                                         <h3>{{item.subject}}</h3>
                                                                         <h3>{{item.time}}</h3>
@@ -252,7 +353,10 @@
                                                         <div class="bg-item-body clear">
                                                             <p edit-hover="visible">
                                                                 Causes Jeff cares about:
-                                                                <i  ng-click="showEdit($event, 'volunteer.html', volunteerList.about)" class="material-icons md-18 non-visible">mode_edit</i>
+                                                                <i  ng-click="showEdit($event, 'volunteer.html', volunteerList.about)" class="material-icons md-18 non-visible">
+                                                                    mode_edit
+                                                                    <md-tooltip>Edit</md-tooltip>
+                                                                </i>
                                                             </p>
                                                             <ul>
                                                                 <li ng-repeat="item in volunteerList.about">{{item.text}}</li>
@@ -262,7 +366,10 @@
                                                         <div class="bg-item-body">
                                                             <p edit-hover="visible">
                                                                 Organizations Jeff supports:
-                                                                <i ng-click="showEdit($event, 'volunteer.html', volunteerList.support)" class="material-icons md-18 non-visible">mode_edit</i>   
+                                                                <i ng-click="showEdit($event, 'volunteer.html', volunteerList.support)" class="material-icons md-18 non-visible">
+                                                                    mode_edit
+                                                                    <md-tooltip>Edit</md-tooltip>
+                                                                </i>   
                                                             </p>
                                                             <ul>
                                                                 <li ng-repeat="item in volunteerList.support"><a href="#" >{{item.text}}</a></li>
@@ -273,41 +380,23 @@
                                                 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                             </md-content>
                                         </md-tab>
                                         <md-tab label="Connections">
                                             <md-content class="md-padding">
                                                 <h1 class="md-display-2">Tab Two</h1>
 
-                                                <div edit-hover="visible"
-                                                     >
-                                                    <h1>Test 1 2 3.</h1>
-                                                    <i  class="non-visible">awdaw</i>
-                                                </div>  
-                                                <div 
-                                                    hover-class="visible">
-                                                    <h1>Test 1 2 3.</h1>
-                                                    <i  class="non-visible">awdaw</i>
-                                                </div>  
+
+
+                                                <div layout="row">
+                                                    <img ng-src="imgs/exp_logo.png" height="100px" width="100px">
+                                                    <div layout="column">
+                                                        <h1>Title</h1>
+                                                        <h2>SubTitle</h2>
+                                                    </div>
+                                                </div>
+
+
 
                                             </md-content>
                                         </md-tab>
