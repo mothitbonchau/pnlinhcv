@@ -12,13 +12,11 @@
 
         <md-dialog-content>
             <div class="md-dialog-content">
-
                 <div layout ="row"  ng-repeat="summary in dialogData" >
-
                     <md-input-container flex="" md-detect-hidden  class="md-icon-float md-block">
                         <label>Summary - {{($index + 1)}}</label>
                         <md-icon class="material-icons">assignment</md-icon>
-                        <textarea ng-model="summary.text"  rows="3" required  md-select-on-focus></textarea>
+                        <textarea ng-model="summary.text"  rows="3" required ng-change="dialogData.$save(summary)"  md-select-on-focus></textarea>
                     </md-input-container>
                     <md-button class="md-icon-button" aria-label="More" ng-click="dialogData.splice($index, 1)">
                         <md-icon class="material-icons " ng-class="md - 24">delete</md-icon>

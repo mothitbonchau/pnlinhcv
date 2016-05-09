@@ -176,7 +176,7 @@
                                                                                     mode_edit
                                                                                     <md-tooltip>Edit {{item.job}}</md-tooltip>
                                                                                 </i>
-                                                                                <i ng-click="experienceList.splice($index, 1)" class="material-icons md-18">
+                                                                                <i ng-click="experienceList.$remove(item)" class="material-icons md-18">
                                                                                     delete
                                                                                     <md-tooltip>Delete {{item.job}}</md-tooltip>
                                                                                 </i>
@@ -231,7 +231,7 @@
                                                                                     mode_edit
                                                                                     <md-tooltip>Edit {{item.name}}</md-tooltip>
                                                                                 </i>
-                                                                                <i  ng-click="projectList.splice($index,1)" class="material-icons md-18 ">
+                                                                                <i  ng-click="projectList.$remove(item)" class="material-icons md-18 ">
                                                                                     delete
                                                                                     <md-tooltip>Delete {{item.name}}</md-tooltip>
                                                                                 </i>
@@ -326,7 +326,7 @@
                                                                                     mode_edit
                                                                                     <md-tooltip>Edit {{item.name}}</md-tooltip>
                                                                                 </i>
-                                                                                <i  ng-click="educationList.splice($index, 1)" class="material-icons md-18 ">
+                                                                                <i  ng-click="educationList.$remove(item)" class="material-icons md-18 ">
                                                                                     delete
                                                                                     <md-tooltip>Delete {{item.name}}</md-tooltip>
                                                                                 </i>
@@ -461,5 +461,7 @@
             <script src='js/angular-material.min.js'></script>
             <script src="js/index.js"></script>
             <script src="js/bootstrap.min.js"></script>
+            <script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+            <script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
     </body>
 </html>
